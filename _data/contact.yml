@@ -13,6 +13,13 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+
+- type: discord
+  icon: "fa-brands fa-discord"
+
+- type: steam
+  icon: "fa-brands fa-steam"
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
