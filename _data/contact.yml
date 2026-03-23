@@ -20,6 +20,9 @@
 - type: steam
   icon: "fa-brands fa-steam"
 
+- type: whatsapp
+  icon: "fa-brands fa-whatsapp"
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
