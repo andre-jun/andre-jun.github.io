@@ -3,8 +3,9 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: steam
+  icon: "fa-brands fa-steam"
+  url: "https://steamcommunity.com/id/andrejhirata/"
 
 - type: email
   icon: "fas fa-envelope"
@@ -14,14 +15,6 @@
   icon: "fas fa-rss"
   noblank: true
 
-- type: discord
-  icon: "fa-brands fa-discord"
-
-- type: steam
-  icon: "fa-brands fa-steam"
-
-- type: whatsapp
-  icon: "fa-brands fa-whatsapp"
 
 # Uncomment and complete the url below to enable more contact options
 #
