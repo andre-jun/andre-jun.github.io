@@ -33,7 +33,7 @@ compilado). Esses valores ficam armazenados no `.config`.
 
 ## Resultado
 
-Tutorial concluído sem intercorrências. O `simple_mod` foi compilado, instalado
+Tutorial concluído sem problemas. O `simple_mod` foi compilado, instalado
 na VM, carregado com `insmod` e as mensagens `"Hello world"` e `"Goodbye world"`
 apareceram corretamente no `dmesg`.
 

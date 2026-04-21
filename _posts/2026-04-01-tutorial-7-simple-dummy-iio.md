@@ -35,6 +35,6 @@ quais atributos ficam expostos para o userspace via sysfs — o que o driver
 
 ## Resultado
 
-Tutorial concluído sem intercorrências. Leitura densa mas bem comentada —
+Tutorial concluído sem problemas. Leitura densa mas bem comentada —
 o `iio_simple_dummy` tem comentários extensos no próprio código que ajudam
 bastante a acompanhar o tutorial.

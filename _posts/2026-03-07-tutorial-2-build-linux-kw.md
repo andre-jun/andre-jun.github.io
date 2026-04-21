@@ -37,7 +37,7 @@ Isso reduz drasticamente o tempo de compilação — relevante dado o tamanho da
 
 ## Resultado
 
-Tutorial concluído sem intercorrências. Ao final, a VM estava rodando um kernel
+Tutorial concluído sem problemas. Ao final, a VM estava rodando um kernel
 compilado localmente a partir da árvore IIO, com os módulos instalados via
 `kw deploy --modules`. O fluxo completo de build e deploy funcionou conforme
 descrito no tutorial.
