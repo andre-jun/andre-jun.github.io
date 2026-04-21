@@ -11,7 +11,7 @@ MAC0470, Desenvolvimento de Software Livre da USP.
 
 ## O subsistema
 
-O driver escolhido foi o **dpm**, o driver de GPU AMD presente no kernel
+O driver escolhido foi o **amdgpu**, o driver de GPU AMD presente no kernel
 Linux, dentro do subsistema DRM (`drivers/gpu/drm/amd/pm/`). A escolha
 foi, em parte, recomendada pelo professor, que propôs a substituição de
 `mutex_lock` e `mutex_unlock` pelo mais moderno `guard`.
