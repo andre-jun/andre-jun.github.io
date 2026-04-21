@@ -159,6 +159,8 @@ O patch foi enviado ao manteinedor e para a mailing list do subsistema amdgpu:
 - **Maintainers:** Kenneth Feng
 - **Lista:** `amd-gfx@lists.freedesktop.org`
 
+o patch pode ser encontrado no [lore.kernel](https://lore.kernel.org/amd-gfx/20260421015506.9230-1-andrejhirata@usp.br/T/#u)
+
 ## Resultado
 
 O patch foi enviado mas ainda nao recebemos feedback.

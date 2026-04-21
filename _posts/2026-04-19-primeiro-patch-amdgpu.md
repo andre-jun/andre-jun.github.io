@@ -1,5 +1,5 @@
 ---
-title: "Primeiro patch no kernel Linux: deduplicando código no driver amdgpu"
+title: "Primeiro patch no kernel Linux: Deduplicando código no driver amdgpu"
 date: 2026-04-19 12:12:45 -0300
 categories: [Kernel, Patches]
 tags: [kernel, linux, amdgpu, drm, patch, contribuição]
@@ -106,6 +106,8 @@ O patch foi enviado aos mantenedores e para a mailing list do subsistema amdgpu:
 
 - **Maintainers:** Alex Deucher e Christian König
 - **Lista:** `amd-gfx@lists.freedesktop.org`
+
+o patch pode ser encontrado no [lore.kernel](https://lore.kernel.org/amd-gfx/20260418201545.20673-1-andrejhirata@usp.br/)
 
 ## Resultado
 
