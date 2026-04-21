@@ -102,7 +102,7 @@ Signed-off-by: Guilherme Gabriel <guilhermesangabriel@usp.br>
 
 ## Envio
 
-O patch foi enviado para a mailing list do subsistema amdgpu:
+O patch foi enviado aos mantenedores e para a mailing list do subsistema amdgpu:
 
 - **Maintainers:** Alex Deucher e Christian König
 - **Lista:** `amd-gfx@lists.freedesktop.org`
