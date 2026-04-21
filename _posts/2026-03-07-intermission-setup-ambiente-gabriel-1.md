@@ -1,6 +1,6 @@
 ---
 title: "Intermission - Preparando o ambiente para um segundo usuário"
-date: 2025-03-07 15:43:12 -0300
+date: 2026-03-07 15:43:12 -0300
 categories: [Kernel, Intermission]
 tags: [linux, qemu, libvirt, tailscale, setup]
 ---

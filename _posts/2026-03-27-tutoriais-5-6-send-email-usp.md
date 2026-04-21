@@ -1,6 +1,6 @@
 ---
 title: "Tutoriais 5 e 6 - Enviando patches por email com git e email USP"
-date: 2025-03-27 19:16:56 -0300
+date: 2026-03-27 19:16:56 -0300
 categories: [Kernel, Tutoriais]
 tags: [linux, kernel, git, send-email, kw, patches, docker, oauth]
 ---

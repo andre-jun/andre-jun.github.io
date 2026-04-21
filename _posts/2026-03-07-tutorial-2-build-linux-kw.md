@@ -1,6 +1,6 @@
 ---
 title: "Tutorial 2 - Compilando e bootando um kernel Linux customizado com kw"
-date: 2025-03-07 19:12:03 -0300
+date: 2026-03-07 19:12:03 -0300
 categories: [Kernel, Tutoriais]
 tags: [linux, arm64, kw, kworkflow, kernel, cross-compile]
 ---

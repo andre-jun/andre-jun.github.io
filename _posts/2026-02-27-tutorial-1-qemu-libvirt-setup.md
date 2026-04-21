@@ -1,6 +1,6 @@
 ---
 title: "Tutorial 1 - Configurando ambiente de teste com QEMU e libvirt"
-date: 2025-02-27 19:37:45 -0300
+date: 2026-02-27 19:37:45 -0300
 categories: [Kernel, Tutoriais]
 tags: [linux, arm64, qemu, libvirt, kernel]
 ---
