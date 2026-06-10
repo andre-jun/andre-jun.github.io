@@ -52,7 +52,9 @@ Levei isso pro Farid no Telegram e perguntei se já havia algum plano para uma b
 Postei a pergunta na room do KWin e recebi uma resposta detalhada do Jakob, um dos desenvolvedores do KDE:
 
 > [Conversa no Matrix pt.1](https://matrix.to/#/!XOAbrjXKfOMhBYGSji:kde.org/$G2DNGUG3jIkKJXI57E-X2X6QHqZjxvSk5up63Q1CvM4?via=kde.org&via=matrix.org&via=im.kde.org)
+> 
 > [Conversa no Matrix pt.2](https://matrix.to/#/!XOAbrjXKfOMhBYGSji:kde.org/$786ZtyhCGNPUm5w9CAiw8xucH_0xBPvsEcKeqq9a0js?via=kde.org&via=matrix.org&via=im.kde.org)
+> 
 > [Conversa no Matrix pt.3](https://matrix.to/#/!XOAbrjXKfOMhBYGSji:kde.org/$e6MbX94HyqjZTi87sDx4Ya_6eXD4zvYRPQWxE3qI8HQ?via=kde.org&via=matrix.org&via=im.kde.org)
 
 O resumo: não há uma resposta preferida ainda, e o espaço de design está genuinamente aberto. Algumas das tensões que ele apontou:
