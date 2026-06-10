@@ -22,7 +22,6 @@ O Mouse KCM atualmente é assim:
 
 
 ![KCM do mouse atual 1](/assets/img/posts/kde-mouse-kcm/mouse-kcm-current-1.png)
-![KCM do mouse atual 2](/assets/img/posts/kde-mouse-kcm/mouse-kcm-current-2.png)
 
 *O Mouse KCM atual no KDE Plasma*
 
