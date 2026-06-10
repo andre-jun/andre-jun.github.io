@@ -21,8 +21,8 @@ O Mouse KCM atualmente é assim:
 
 
 
-![KCM do mouse atual](/assets/img/posts/kde-mouse-kcm/mouse-kcm-current.png)
-
+![KCM do mouse atual 1](/assets/img/posts/kde-mouse-kcm/mouse-kcm-current-1.png)
+![KCM do mouse atual 2](/assets/img/posts/kde-mouse-kcm/mouse-kcm-current-2.png)
 
 *O Mouse KCM atual no KDE Plasma*
 
@@ -30,7 +30,9 @@ E esse é o Piper, o app GTK que acompanha o libratbag:
 
 
 
-![Piper](/assets/img/posts/kde-mouse-kcm/piper.png)
+![Piper resolution](/assets/img/posts/kde-mouse-kcm/piper-resolutionpage.png)
+![Piper buttons](/assets/img/posts/kde-mouse-kcm/piper-buttonpage.png)
+![Piper led](/assets/img/posts/kde-mouse-kcm/piper-ledpage.png)
 
 
 *Piper — o frontend GTK do libratbag*
@@ -93,7 +95,7 @@ A proposta está postada e estamos aguardando feedback. Até agora tivemos uma b
 
 
 
-![Feedback inicial](/assets/img/posts/kde-mouse-kcm/brief-feedback.png)
+![Feedback inicial](/assets/img/posts/kde-mouse-kcm/brief-feedback.jpg)
 
 
 *Leve feedback do Jakob sobre a proposta*
