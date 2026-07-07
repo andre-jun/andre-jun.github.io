@@ -159,8 +159,53 @@ O patch foi enviado ao manteinedor e para a mailing list do subsistema amdgpu:
 - **Maintainers:** Kenneth Feng
 - **Lista:** `amd-gfx@lists.freedesktop.org`
 
-o patch pode ser encontrado no [lore.kernel](https://lore.kernel.org/amd-gfx/20260421015506.9230-1-andrejhirata@usp.br/T/#u)
+o patch pode ser encontrado no [lore.kernel](https://lore.kernel.org/all/20260508024744.6523-1-andrejhirata@usp.br/)
 
 ## Resultado
 
-O patch foi enviado mas ainda nao recebemos feedback.
+Após várias iterações com os mantenedores a mensagem do patch acabou assim
+
+```
+drm/amd/pm: Use guard(mutex) instead of manual lock+unlock
+
+Use guard() and scoped_guard() for handling mutex lock instead of
+manually locking and unlocking the mutex. This prevents forgotten
+locks due to early exits and removes the need of gotos.
+
+Signed-off-by: Andre Jun Hirata <andrejhirata@usp.br>
+Co-developed-by: Gabriel Dimant <gabriel.dimant@usp.br>
+Signed-off-by: Gabriel Dimant <gabriel.dimant@usp.br>
+Co-developed-by: Guilherme Gabriel <guilhermesangabriel@usp.br>
+Signed-off-by: Guilherme Gabriel <guilhermesangabriel@usp.br>
+
+Reviewed-by: Christian König <christian.koenig@amd.com>
+Reviewed-by: Yang Wang <kevinyang.wang@amd.com>
+Reviewed-by: Lijo Lazar <lijo.lazar@amd.com>
+---
+v2: incorporate Christian König's suggestions:
+  - use return f() directly instead of ret = f(); return ret;
+  - use early return pattern before guard() where applicable
+
+v3: fix style nits pointed by Christian König:
+  - drop superfluous ret initialization in set_gfx_power_up_by_imu
+  - drop unnecessary braces around single-line scoped_guard
+
+v4:
+ - fix build errors introduced in v3
+ - fix incorrect is_support_sw_smu() condition
+ - remove accidental "return =" typos
+
+v5: fix incorrect diff in v4
+
+v6: fix missing semicolon in smu_mode1_reset_is_support() return statement
+
+v7: address Lijo Lazar's review comments:
+   - use early return when (!adev->pm.dpm_enabled) in acpi_event_handler
+   - drop unnecessary ret init in amdgpu_pm_load_smu_firmware
+   - check function pointer before taking mutex in set_sclk_od and set_mclk_od
+   - return directly in amdgpu_dpm_is_cclk_dpm_supported
+
+v8: remove unused variable 'vstate' in amdgpu_dpm_get_vce_clock_state
+```
+
+Ainda não houve resposta sobre esse patch, o mantenedor responsável pelo arquivo, Kenneth Feng, recentemente assumiu o cargo de CEO da MGM China, o que pode explicar a demora na resposta.
