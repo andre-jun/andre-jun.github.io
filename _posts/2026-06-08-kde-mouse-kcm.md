@@ -92,9 +92,7 @@ Depois de pensar nos tradeoffs, chegamos ao seguinte:
 
 ## Próximos passos
 
-A proposta está postada e estamos aguardando feedback. Até agora tivemos uma breve olhada e pelo que parece a recepção está sendo bem positiva.
-
-
+A proposta foi publicada e já recebemos feedback. Agora, estamos trabalhando nas tarefas definidas anteriormente. Os demais grupos que também estão contribuindo com o KDE irão se juntar a esse esforço e executar as tarefas estabelecidas.
 
 ![Feedback inicial](/assets/img/posts/kde-mouse-kcm/brief-feedback.jpg)
 
