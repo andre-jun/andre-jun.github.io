@@ -189,64 +189,55 @@ apareceram inclusive contribuidores brasileiros da USP, o que sugere que o
 conteúdo dos emails (patches com muito código ou texto técnico denso) ainda
 está influenciando o score mais do que o tom em si.
 
-```
-    Mais positivos - sem outliers:
-    shape: (20, 5)
-    ┌─────────────────────────────────────────────────────────────────────────────┬──────────┬─────────┬────────────────┬──────────┐
-    │ from                                                                        ┆ messages ┆ threads ┆ mean_sentiment ┆ std      │
-    │ ---                                                                         ┆ ---      ┆ ---     ┆ ---            ┆ ---      │
-    │ str                                                                         ┆ u32      ┆ u32     ┆ f64            ┆ f64      │
-    ╞═════════════════════════════════════════════════════════════════════════════╪══════════╪═════════╪════════════════╪══════════╡
-    │ Cihangir Akturk <cakturk-Re5JQEeQqe8AvxtiuMwx3w@public.gmane.org>           ┆ 2        ┆ 2       ┆ 0.99785        ┆ 0.000071 │
-    │ Andreas Messer <andi@bastelmap.de>                                          ┆ 1        ┆ 1       ┆ 0.976          ┆ 0.0      │
-    │ Dan Carpenter via dri-devel <dri-devel@lists.freedesktop.org>               ┆ 1        ┆ 1       ┆ 0.9732         ┆ 0.0      │
-    │ Amit Kachhap <Amit.Kachhap@arm.com>                                         ┆ 1        ┆ 1       ┆ 0.9699         ┆ 0.0      │
-    │ Mario Kleiner via dri-devel <dri-devel@lists.freedesktop.org>               ┆ 1        ┆ 1       ┆ 0.9549         ┆ 0.0      │
-    │ Daniel Latypov <dlatypov@google.com>                                        ┆ 1        ┆ 1       ┆ 0.9546         ┆ 0.0      │
-    │ ydirson@free.fr                                                             ┆ 1        ┆ 1       ┆ 0.9506         ┆ 0.0      │
-    │ Sebin Sebastian <mailmesebin00@gmail.com>                                   ┆ 1        ┆ 1       ┆ 0.9477         ┆ 0.0      │
-    │ patchwork-bot+netdevbpf@kernel.org                                          ┆ 1        ┆ 1       ┆ 0.9422         ┆ 0.0      │
-    │ liviu.dudau@arm.com <liviu.dudau@arm.com>                                   ┆ 1        ┆ 1       ┆ 0.9412         ┆ 0.0      │
-    │ Jeff Cook <jeff@jeffcook.io>                                                ┆ 1        ┆ 1       ┆ 0.9374         ┆ 0.0      │
-    │ Andrew Worsley <amworsley@gmail.com>                                        ┆ 1        ┆ 1       ┆ 0.9311         ┆ 0.0      │
-    │ taskboxtester@gmail.com                                                     ┆ 1        ┆ 1       ┆ 0.9265         ┆ 0.0      │
-    │ Vivek Das Mohapatra <vivek@collabora.com>                                   ┆ 2        ┆ 1       ┆ 0.9186         ┆ 0.0      │
-    │ Welty Brian <brian.welty@intel.com>                                         ┆ 1        ┆ 1       ┆ 0.9095         ┆ 0.0      │
-    │ Akash Goel <akash.goel@arm.com>                                             ┆ 3        ┆ 1       ┆ 0.908567       ┆ 0.056407 │
-    │ Liu HaoPing (Alan) <HaoPing.liu@amd.com>                                    ┆ 1        ┆ 1       ┆ 0.9062         ┆ 0.0      │
-    │ Tamminen Eero T <eero.t.tamminen@intel.com>                                 ┆ 1        ┆ 1       ┆ 0.9042         ┆ 0.0      │
-    │ Linus Torvalds <torvalds-de/tnXTf+JLsfHDXvbKv3WD2FQJk+8+b@public.gmane.org> ┆ 1        ┆ 1       ┆ 0.9032         ┆ 0.0      │
-    │ Zhang Tiantian (Celine) <Tiantian.Zhang@amd.com>                            ┆ 1        ┆ 1       ┆ 0.9022         ┆ 0.0      │
-    └─────────────────────────────────────────────────────────────────────────────┴──────────┴─────────┴────────────────┴──────────┘
-  Mais negativos - sem outliers:
-    shape: (20, 5)
-    ┌───────────────────────────────────────────────────────────────────┬──────────┬─────────┬────────────────┬──────────┐
-    │ from                                                              ┆ messages ┆ threads ┆ mean_sentiment ┆ std      │
-    │ ---                                                               ┆ ---      ┆ ---     ┆ ---            ┆ ---      │
-    │ str                                                               ┆ u32      ┆ u32     ┆ f64            ┆ f64      │
-    ╞═══════════════════════════════════════════════════════════════════╪══════════╪═════════╪════════════════╪══════════╡
-    │ kbuild test robot via dri-devel <dri-devel@lists.freedesktop.org> ┆ 1        ┆ 1       ┆ -0.9999        ┆ 0.0      │
-    │ Michael D Labriola <michael.d.labriola@gmail.com>                 ┆ 1        ┆ 1       ┆ -0.9762        ┆ 0.0      │
-    │ ozeng <ozeng-5C7GfCeVMHo@public.gmane.org>                        ┆ 1        ┆ 1       ┆ -0.9739        ┆ 0.0      │
-    │ Michael Bommarito <michael.bommarito@gmail.com>                   ┆ 1        ┆ 1       ┆ -0.9732        ┆ 0.0      │
-    │ Jérôme Glisse <jglisse-H+wXaHxf7aLQT0dZR+AlfA@public.gmane.org>   ┆ 1        ┆ 1       ┆ -0.9675        ┆ 0.0      │
-    │ Liu01 Tong <Tong.Liu01@amd.com>                                   ┆ 3        ┆ 3       ┆ -0.9644        ┆ 0.021997 │
-    │ David Baum <davidbaum461@gmail.com>                               ┆ 1        ┆ 1       ┆ -0.9565        ┆ 0.0      │
-    │ Amir Shetaia <amir.shetaia@amd.com>                               ┆ 1        ┆ 1       ┆ -0.9509        ┆ 0.0      │
-    │ Mario Limonciello <superm1@gmail.com>                             ┆ 1        ┆ 1       ┆ -0.9501        ┆ 0.0      │
-    │ xurui <xurui@kylinos.cn>                                          ┆ 2        ┆ 2       ┆ -0.9452        ┆ 0.0      │
-    │ R SUNDAR <prosunofficial@gmail.com>                               ┆ 1        ┆ 1       ┆ -0.9413        ┆ 0.0      │
-    │ Swarup Laxman Kotiaklapudi <swarupkotikalapudi@gmail.com>         ┆ 1        ┆ 1       ┆ -0.9413        ┆ 0.0      │
-    │ ts8060 <ts8060@my.bristol.ac.uk>                                  ┆ 1        ┆ 1       ┆ -0.9386        ┆ 0.0      │
-    │ Dixit Ashutosh <ashutosh.dixit@intel.com>                         ┆ 1        ┆ 1       ┆ -0.9349        ┆ 0.0      │
-    │ Guangshuo Li <lgs201920130244@gmail.com>                          ┆ 2        ┆ 2       ┆ -0.92785       ┆ 0.045467 │
-    │ Siyang Liu <Security@tencent.com>                                 ┆ 1        ┆ 1       ┆ -0.9274        ┆ 0.0      │
-    │ Ahmed Elmetwally <en22ue@gmail.com>                               ┆ 1        ┆ 1       ┆ -0.9246        ┆ 0.0      │
-    │ Ken Xue <Ken.Xue@amd.com>                                         ┆ 1        ┆ 1       ┆ -0.9062        ┆ 0.0      │
-    │ Ziyi Guo <n7l8m4@u.northwestern.edu>                              ┆ 1        ┆ 1       ┆ -0.9055        ┆ 0.0      │
-    │ Daniel Kurtz <djkurtz-F7+t8E8rja9g9hUCZPvPmw@public.gmane.org>    ┆ 1        ┆ 1       ┆ -0.8989        ┆ 0.0      │
-    └───────────────────────────────────────────────────────────────────┴──────────┴─────────┴────────────────┴──────────┘
-```
+Mais positivos - sem outliers:
+
+| from | messages | threads | mean_sentiment | std |
+|------|---------:|--------:|---------------:|----:|
+| Cihangir Akturk <cakturk-Re5JQEeQqe8AvxtiuMwx3w@public.gmane.org> | 2 | 2 | 0.99785 | 0.000071 |
+| Andreas Messer <andi@bastelmap.de> | 1 | 1 | 0.976 | 0.0 |
+| Dan Carpenter via dri-devel <dri-devel@lists.freedesktop.org> | 1 | 1 | 0.9732 | 0.0 |
+| Amit Kachhap <Amit.Kachhap@arm.com> | 1 | 1 | 0.9699 | 0.0 |
+| Mario Kleiner via dri-devel <dri-devel@lists.freedesktop.org> | 1 | 1 | 0.9549 | 0.0 |
+| Daniel Latypov <dlatypov@google.com> | 1 | 1 | 0.9546 | 0.0 |
+| ydirson@free.fr | 1 | 1 | 0.9506 | 0.0 |
+| Sebin Sebastian <mailmesebin00@gmail.com> | 1 | 1 | 0.9477 | 0.0 |
+| patchwork-bot+netdevbpf@kernel.org | 1 | 1 | 0.9422 | 0.0 |
+| liviu.dudau@arm.com <liviu.dudau@arm.com> | 1 | 1 | 0.9412 | 0.0 |
+| Jeff Cook <jeff@jeffcook.io> | 1 | 1 | 0.9374 | 0.0 |
+| Andrew Worsley <amworsley@gmail.com> | 1 | 1 | 0.9311 | 0.0 |
+| taskboxtester@gmail.com | 1 | 1 | 0.9265 | 0.0 |
+| Vivek Das Mohapatra <vivek@collabora.com> | 2 | 1 | 0.9186 | 0.0 |
+| Welty Brian <brian.welty@intel.com> | 1 | 1 | 0.9095 | 0.0 |
+| Akash Goel <akash.goel@arm.com> | 3 | 1 | 0.908567 | 0.056407 |
+| Liu HaoPing (Alan) <HaoPing.liu@amd.com> | 1 | 1 | 0.9062 | 0.0 |
+| Tamminen Eero T <eero.t.tamminen@intel.com> | 1 | 1 | 0.9042 | 0.0 |
+| Linus Torvalds <torvalds-de/tnXTf+JLsfHDXvbKv3WD2FQJk+8+b@public.gmane.org> | 1 | 1 | 0.9032 | 0.0 |
+| Zhang Tiantian (Celine) <Tiantian.Zhang@amd.com> | 1 | 1 | 0.9022 | 0.0 |
+    
+Mais negativos - sem outliers:
+
+| from | messages | threads | mean_sentiment | std |
+|------|---------:|--------:|---------------:|----:|
+| kbuild test robot via dri-devel <dri-devel@lists.freedesktop.org> | 1 | 1 | -0.9999 | 0.0 |
+| Michael D Labriola <michael.d.labriola@gmail.com> | 1 | 1 | -0.9762 | 0.0 |
+| ozeng <ozeng-5C7GfCeVMHo@public.gmane.org> | 1 | 1 | -0.9739 | 0.0 |
+| Michael Bommarito <michael.bommarito@gmail.com> | 1 | 1 | -0.9732 | 0.0 |
+| Jérôme Glisse <jglisse-H+wXaHxf7aLQT0dZR+AlfA@public.gmane.org> | 1 | 1 | -0.9675 | 0.0 |
+| Liu01 Tong <Tong.Liu01@amd.com> | 3 | 3 | -0.9644 | 0.021997 |
+| David Baum <davidbaum461@gmail.com> | 1 | 1 | -0.9565 | 0.0 |
+| Amir Shetaia <amir.shetaia@amd.com> | 1 | 1 | -0.9509 | 0.0 |
+| Mario Limonciello <superm1@gmail.com> | 1 | 1 | -0.9501 | 0.0 |
+| xurui <xurui@kylinos.cn> | 2 | 2 | -0.9452 | 0.0 |
+| R SUNDAR <prosunofficial@gmail.com> | 1 | 1 | -0.9413 | 0.0 |
+| Swarup Laxman Kotiaklapudi <swarupkotikalapudi@gmail.com> | 1 | 1 | -0.9413 | 0.0 |
+| ts8060 <ts8060@my.bristol.ac.uk> | 1 | 1 | -0.9386 | 0.0 |
+| Dixit Ashutosh <ashutosh.dixit@intel.com> | 1 | 1 | -0.9349 | 0.0 |
+| Guangshuo Li <lgs201920130244@gmail.com> | 2 | 2 | -0.92785 | 0.045467 |
+| Siyang Liu <Security@tencent.com> | 1 | 1 | -0.9274 | 0.0 |
+| Ahmed Elmetwally <en22ue@gmail.com> | 1 | 1 | -0.9246 | 0.0 |
+| Ken Xue <Ken.Xue@amd.com> | 1 | 1 | -0.9062 | 0.0 |
+| Ziyi Guo <n7l8m4@u.northwestern.edu> | 1 | 1 | -0.9055 | 0.0 |
+| Daniel Kurtz <djkurtz-F7+t8E8rja9g9hUCZPvPmw@public.gmane.org> | 1 | 1 | -0.8989 | 0.0 |
 
 ## Limitações e próximos passos
 
